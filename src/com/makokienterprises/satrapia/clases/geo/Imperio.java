@@ -2,6 +2,7 @@ package com.makokienterprises.satrapia.clases.geo;
 
 import com.makokienterprises.satrapia.clases.usuarios.Jugador;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Imperio {
@@ -11,11 +12,15 @@ public class Imperio {
 
     private boolean esTribu;
 
-    public List<Jugador> jugadores;
+    public List<Jugador> jugadores = new ArrayList<>();
 
     public Imperio(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNombre() {
@@ -27,7 +32,15 @@ public class Imperio {
     }
 
     public void addJugador(Jugador j) {
-        //TODO
+        jugadores.add(j);
+    }
+
+    public void setEsTribu(boolean esTribu) {
+        this.esTribu = esTribu;
+    }
+
+    public boolean getEsTribu() {
+        return this.esTribu;
     }
 
 

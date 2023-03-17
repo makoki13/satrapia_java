@@ -1,7 +1,9 @@
 package com.makokienterprises.satrapia.clases.usuarios;
 
+import com.makokienterprises.satrapia.clases.dispatcher.Dispatcher;
 import com.makokienterprises.satrapia.clases.geo.Imperio;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Partida {
@@ -9,14 +11,16 @@ public class Partida {
 
     public String nombre;
 
-    private List<Imperio> imperios;
+    private List<Imperio> imperios = new ArrayList<>();
 
     public Partida(String nombre) {
         this.nombre = nombre;
+
+        Dispatcher.inicializa();
     }
 
     public void addImperio(Imperio imperio) {
-        //TODO
+        imperios.add(imperio);
     }
 
     public List<Imperio> listaImperios() {

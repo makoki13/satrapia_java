@@ -4,30 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Almacen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Censo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Edificio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/FuenteDeRecursos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Hacienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Recurso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/parametros/Parametros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Partida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestDispatcher.java" afterDir="false" />
+    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="esquema">
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Imperio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Imperio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Mapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Mapa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Nacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Nacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Punto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Terreno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Terreno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Partida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestDispatcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.TestPartida">
     <configuration name="TestDispatcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.makokienterprises.satrapia.pruebas.TestDispatcher" />
       <module name="com.makokienterprises.satrapia" />
@@ -74,8 +58,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestPartida" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.makokienterprises.satrapia.pruebas.TestPartida" />
+      <module name="com.makokienterprises.satrapia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.makokienterprises.satrapia.pruebas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestPartida" />
         <item itemvalue="Application.TestDispatcher" />
       </list>
     </recent_temporary>
@@ -89,6 +87,26 @@
       <option name="presentableId" value="Default" />
       <updated>1679056816905</updated>
     </task>
+    <task id="LOCAL-00001" summary="Dispatcher et alters">
+      <created>1679070148071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679070148072</updated>
+    </task>
+    <task id="LOCAL-00002" summary="esquema">
+      <created>1679070211604</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679070211604</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dispatcher et alters" />
+    <MESSAGE value="esquema" />
+    <option name="LAST_COMMIT_MESSAGE" value="esquema" />
   </component>
 </project>

@@ -33,7 +33,7 @@ public class TestDispatcher {
         Tarea tarea2 = new Tarea(null,"funcion 2",3);
         Tarea tarea3 = new Tarea(null,"funcion 3",10);
 
-        Dispatcher dispatcher = new Dispatcher();
+        //Dispatcher dispatcher = new Dispatcher();
         Dispatcher.inicializa();
         Dispatcher.addTarea(tarea1);
         Dispatcher.addTarea(tarea2);

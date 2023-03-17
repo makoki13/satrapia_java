@@ -4,7 +4,7 @@ import com.makokienterprises.satrapia.clases.geo.Imperio;
 import com.makokienterprises.satrapia.clases.geo.Nacion;
 
 public class Jugador {
-    enum Roles {
+    public enum Roles {
         EMPERADOR,
         SATRAPA,
         JEFE_DE_TRIBU
@@ -19,6 +19,14 @@ public class Jugador {
     private Nacion nacion;
 
     private int idImperio;
+
+    public Jugador(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public Usuario getUsuario() {
         return usuario;
@@ -42,5 +50,21 @@ public class Jugador {
 
     public void setRol(Roles rol) {
         this.rol = rol;
+    }
+
+    public void setNacion(Nacion nacion) {
+        this.nacion = nacion;
+    }
+
+    public Nacion getNacion() {
+        return nacion;
+    }
+
+    public int getIdImperio() {
+        return this.idImperio;
+    }
+
+    public void setIdImperio(int id) {
+        this.idImperio = id;
     }
 }
