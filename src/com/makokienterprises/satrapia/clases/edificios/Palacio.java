@@ -40,6 +40,10 @@ public class Palacio extends Edificio {
         Method funcionRecaudaImpuestos = Palacio.class.getMethod("recaudaImpuestos");
         Tarea tarea1 = new Tarea(this,funcionRecaudaImpuestos,5);
         Dispatcher.addTarea(tarea1);
+
+        Method funcionHazCenso = Palacio.class.getMethod("hazCenso");
+        Tarea tarea2 = new Tarea(this,funcionHazCenso,5);
+        Dispatcher.addTarea(tarea2);
     }
 
     public void recaudaImpuestos() {
