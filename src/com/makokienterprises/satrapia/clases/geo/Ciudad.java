@@ -27,4 +27,20 @@ public class Ciudad {
     //TODO public List<Cantera> canteras;
     //TODO public List<MinaDeHierro> minasDeHierro;
     //TODO public List<MinaDeOro> minasDeOro;
+
+
+    public Ciudad(String nombre, int idRegion, Punto posicion, boolean esCapital) throws NoSuchMethodException {
+        this.id = 1;
+        this.nombre = nombre;
+        this.idRegion = idRegion;
+        this.posicion = posicion;
+        this.esCapital = esCapital;
+
+        //Creamos el palacio
+        this.palacio = new Palacio(this);
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
 }

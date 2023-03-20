@@ -1,11 +1,12 @@
 package com.makokienterprises.satrapia.clases.edificios;
 
+import com.makokienterprises.satrapia.clases.geo.Ciudad;
 import com.makokienterprises.satrapia.clases.geo.Punto;
 
 public class Edificio {
     private int id;
     public String nombre;
-    private int idCiudad;
+    private Ciudad ciudad;
 
     private Punto posicion;
 
@@ -14,4 +15,12 @@ public class Edificio {
 
     private Almacen almacen;
 
+    public Edificio(int id, Ciudad ciudad) {
+        this.id = id;
+        this.ciudad = ciudad;
+    }
+
+    public Ciudad getCiudad() {
+        return ciudad;
+    }
 }

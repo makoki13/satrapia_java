@@ -1,24 +1,33 @@
 package com.makokienterprises.satrapia.clases.edificios;
 
+import com.makokienterprises.satrapia.clases.dispatcher.Dispatcher;
+import com.makokienterprises.satrapia.clases.dispatcher.Tarea;
+import com.makokienterprises.satrapia.clases.geo.Ciudad;
 import com.makokienterprises.satrapia.clases.parametros.Parametros;
 
-public class Palacio {
+import java.lang.reflect.Method;
+
+public class Palacio extends Edificio {
     private int id;
 
-    public int idCiudad;
+    public Ciudad ciudad;
     public Almacen almacen; // Dos silos, ORO y POBLACION
 
     private Censo censo;
     private Hacienda hacienda;
 
-    public Palacio(int idCiudad) {
-        this.idCiudad = idCiudad;
+    public Palacio(Ciudad ciudad) throws NoSuchMethodException {
+        super(1,ciudad);
+
+        System.out.println("Creando palacio...");
+        this.ciudad = ciudad;
 
         //Crear almacen
         //Silo de oro
-        Silo tesoro = new Silo(Recursos.ORO,0,0,5,1);
-        Silo poblacion = new Silo(Recursos.POBLACION,10,0,5,1);
-        this.almacen = new Almacen();
+        this.almacen = new Almacen(1, "Almacén de palacio", this);
+        Silo tesoro = new Silo(Recursos.ORO,0,0,5,1, this.almacen);
+        Silo poblacion = new Silo(Recursos.POBLACION,10,0,5,1,this.almacen);
+
         this.almacen.addSilo(tesoro);
         this.almacen.addSilo(poblacion);
 
@@ -27,6 +36,10 @@ public class Palacio {
 
         //TODO
         //activar censo y recaudacion
+
+        Method funcionRecaudaImpuestos = Palacio.class.getMethod("recaudaImpuestos");
+        Tarea tarea1 = new Tarea(this,funcionRecaudaImpuestos,5);
+        Dispatcher.addTarea(tarea1);
     }
 
     public void recaudaImpuestos() {
@@ -53,5 +66,9 @@ public class Palacio {
     public int cantidadPoblacion(){
         Silo siloPoblacion = almacen.getSilo(Recursos.POBLACION);
         return siloPoblacion.getStock();
+    }
+
+    public Ciudad getCiudad() {
+        return this.ciudad;
     }
 }

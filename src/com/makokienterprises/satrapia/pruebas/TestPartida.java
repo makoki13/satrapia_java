@@ -1,15 +1,15 @@
 package com.makokienterprises.satrapia.pruebas;
 
-import com.makokienterprises.satrapia.clases.geo.Imperio;
-import com.makokienterprises.satrapia.clases.geo.Nacion;
-import com.makokienterprises.satrapia.clases.geo.Region;
+import com.makokienterprises.satrapia.clases.dispatcher.Dispatcher;
+import com.makokienterprises.satrapia.clases.geo.*;
 import com.makokienterprises.satrapia.clases.usuarios.Jugador;
 import com.makokienterprises.satrapia.clases.usuarios.Partida;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class TestPartida {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Partida partida = new Partida("Primera Partida");
 
         Imperio imperio1 = new Imperio(1,"Imperio Antiguo");
@@ -21,11 +21,17 @@ public class TestPartida {
         Nacion nacion1 = new Nacion("Nacion 1");
         nacion1.setJugador(jugador1.getId());
         Region region1 = new Region(1,"Region 1",null);
+        Punto punto1 = new Punto(1,1,1,null);
+        Ciudad ciudad1R1 = new Ciudad("Gandia",region1.getId(),punto1,true);
+        region1.addCiudad(ciudad1R1);
+        Punto punto2 = new Punto(2,2,2,null);
+        Ciudad ciudad2R1 = new Ciudad("Beniopa",region1.getId(),punto2,false);
+        region1.addCiudad(ciudad2R1);
         Region region2 = new Region(2,"Region 2",null);
+
         nacion1.addRegion(region1);
         nacion1.addRegion(region2);
         jugador1.setNacion(nacion1);
-
 
         Jugador jugador2 = new Jugador(2);
         jugador2.setNombre("Jugador 2");
@@ -116,5 +122,15 @@ public class TestPartida {
             System.out.println("-----------------------");
         }
 
+        Object lock= new Object();
+        synchronized(lock){
+            Dispatcher.inicializa();
+            Dispatcher.ejecuta();
+            // write your code here. You may use wait() or notify() as per your requirement.
+            System.out.println("Sincronizando");
+            lock.wait();
+            //lock.notify();
+            System.out.println("deSincronizando");
+        }
     }
 }

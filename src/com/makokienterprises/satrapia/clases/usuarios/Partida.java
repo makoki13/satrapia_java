@@ -15,8 +15,6 @@ public class Partida {
 
     public Partida(String nombre) {
         this.nombre = nombre;
-
-        Dispatcher.inicializa();
     }
 
     public void addImperio(Imperio imperio) {

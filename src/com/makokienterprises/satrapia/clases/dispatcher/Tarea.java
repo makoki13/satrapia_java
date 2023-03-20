@@ -1,17 +1,19 @@
 package com.makokienterprises.satrapia.clases.dispatcher;
 
+import java.lang.reflect.Method;
 import java.time.Instant;
+import java.util.concurrent.Callable;
 
 public class Tarea {
-    private Object agente;
-    private String funcion;
+    public Object agente;
+    public Method funcion;
 
     public int deltaTiempo;
     public Instant siguienteEjecucion;
 
     private boolean terminado = false; //Si true terminar
 
-    public Tarea(Object agente, String funcion, int deltaTiempo) {
+    public Tarea(Object agente, Method funcion, int deltaTiempo) {
         this.agente = agente;
         this.funcion = funcion;
         this.deltaTiempo = deltaTiempo;

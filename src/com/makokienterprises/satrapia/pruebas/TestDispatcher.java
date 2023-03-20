@@ -11,7 +11,7 @@ class Helper extends TimerTask
     public static int i = 0;
     public void run()
     {
-        Dispatcher.ejecuta();
+        //Dispatcher.ejecuta();
 
         System.out.println("Timer ran" + ++i);
         if(false)
@@ -29,15 +29,15 @@ class Helper extends TimerTask
 public class TestDispatcher {
     public static TestDispatcher obj;
     public static void main(String[] args) throws InterruptedException{
-        Tarea tarea1 = new Tarea(null,"funcion 1",5);
-        Tarea tarea2 = new Tarea(null,"funcion 2",3);
-        Tarea tarea3 = new Tarea(null,"funcion 3",10);
+        //Tarea tarea1 = new Tarea(null,"funcion 1",5);
+        //Tarea tarea2 = new Tarea(null,"funcion 2",3);
+        //Tarea tarea3 = new Tarea(null,"funcion 3",10);
 
         //Dispatcher dispatcher = new Dispatcher();
-        Dispatcher.inicializa();
-        Dispatcher.addTarea(tarea1);
-        Dispatcher.addTarea(tarea2);
-        Dispatcher.addTarea(tarea3);
+        //Dispatcher.inicializa();
+        //Dispatcher.addTarea(tarea1);
+        //Dispatcher.addTarea(tarea2);
+        //Dispatcher.addTarea(tarea3);
 
         obj = new TestDispatcher();
 

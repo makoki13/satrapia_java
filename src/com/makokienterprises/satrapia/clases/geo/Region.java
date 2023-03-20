@@ -37,6 +37,10 @@ public class Region {
         return puntos;
     }
 
+    public int getId() {
+        return this.id;
+    }
+
     public void addCiudad(Ciudad c) {
         //TODO
     }

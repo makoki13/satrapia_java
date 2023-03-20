@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="esquema">
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" afterDir="false" />
+    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="test y ampiacion de clases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Imperio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Imperio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Nacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Nacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Almacen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Almacen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Edificio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Edificio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Region.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/usuarios/Partida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +106,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679070211604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test y ampiacion de clases">
+      <created>1679081581210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679081581210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dispatcher et alters" />
     <MESSAGE value="esquema" />
-    <option name="LAST_COMMIT_MESSAGE" value="esquema" />
+    <MESSAGE value="test y ampiacion de clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="test y ampiacion de clases" />
   </component>
 </project>
