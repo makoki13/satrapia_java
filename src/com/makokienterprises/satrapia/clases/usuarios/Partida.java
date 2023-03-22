@@ -7,13 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Partida {
-    private int id;
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
+    private long id;
 
     public String nombre;
 
     private List<Imperio> imperios = new ArrayList<>();
 
     public Partida(String nombre) {
+        this.id = ++ultimoID;
         this.nombre = nombre;
     }
 
@@ -23,5 +28,9 @@ public class Partida {
 
     public List<Imperio> listaImperios() {
         return imperios;
+    }
+
+    public long getId() {
+        return id;
     }
 }

@@ -3,15 +3,20 @@ package com.makokienterprises.satrapia.clases.geo;
 import java.util.List;
 
 public class Region {
-    private int id;
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
+
+    private long id;
     public String nombre;
 
     private List<Punto> puntos;
 
     private List<Ciudad> ciudades;
 
-    public Region(int id, String nombre, List<Punto> puntos) {
-        this.id = id;
+    public Region(String nombre, List<Punto> puntos) {
+        this.id = ++ultimoID;
         this.nombre = nombre;
         this.puntos = puntos;
     }
@@ -37,7 +42,7 @@ public class Region {
         return puntos;
     }
 
-    public int getId() {
+    public long getId() {
         return this.id;
     }
 

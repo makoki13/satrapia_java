@@ -6,7 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Imperio {
-    private int id;
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
+
+    private long id;
 
     public String nombre;
 
@@ -14,12 +19,12 @@ public class Imperio {
 
     public List<Jugador> jugadores = new ArrayList<>();
 
-    public Imperio(int id, String nombre) {
-        this.id = id;
+    public Imperio(String nombre) {
+        this.id = ++ultimoID;
         this.nombre = nombre;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

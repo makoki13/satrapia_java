@@ -8,7 +8,7 @@ import java.util.List;
 public class Ciudad {
     private int id;
     public String nombre;
-    public int idRegion;
+    public Region region;
 
     private Punto posicion;
 
@@ -29,10 +29,10 @@ public class Ciudad {
     //TODO public List<MinaDeOro> minasDeOro;
 
 
-    public Ciudad(String nombre, int idRegion, Punto posicion, boolean esCapital) throws NoSuchMethodException {
+    public Ciudad(String nombre, Region region, Punto posicion, boolean esCapital) throws NoSuchMethodException {
         this.id = 1;
         this.nombre = nombre;
-        this.idRegion = idRegion;
+        this.region = region;
         this.posicion = posicion;
         this.esCapital = esCapital;
 

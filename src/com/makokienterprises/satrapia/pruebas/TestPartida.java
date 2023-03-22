@@ -11,36 +11,37 @@ import java.util.List;
 public class TestPartida {
     public static void main(String[] args) throws InterruptedException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Partida partida = new Partida("Primera Partida");
+        System.out.println("partida.getId() = " + partida.getId());
 
-        Imperio imperio1 = new Imperio(1,"Imperio Antiguo");
+        Imperio imperio1 = new Imperio("Imperio Antiguo");
 
-        Jugador jugador1 = new Jugador(1);
+        Jugador jugador1 = new Jugador();
         jugador1.setNombre("Jugador 1");
         jugador1.setRol(Jugador.Roles.EMPERADOR);
-        jugador1.setIdImperio(imperio1.getId());
+        jugador1.setImperio(imperio1);
         Nacion nacion1 = new Nacion("Nacion 1");
-        nacion1.setJugador(jugador1.getId());
-        Region region1 = new Region(1,"Region 1",null);
+        nacion1.setJugador(jugador1);
+        Region region1 = new Region("Region 1",null);
         Punto punto1 = new Punto(1,1,1,null);
-        Ciudad ciudad1R1 = new Ciudad("Gandia",region1.getId(),punto1,true);
+        Ciudad ciudad1R1 = new Ciudad("Gandia",region1,punto1,true);
         region1.addCiudad(ciudad1R1);
         Punto punto2 = new Punto(2,2,2,null);
-        Ciudad ciudad2R1 = new Ciudad("Beniopa",region1.getId(),punto2,false);
+        Ciudad ciudad2R1 = new Ciudad("Beniopa",region1,punto2,false);
         region1.addCiudad(ciudad2R1);
-        Region region2 = new Region(2,"Region 2",null);
+        Region region2 = new Region("Region 2",null);
 
         nacion1.addRegion(region1);
         nacion1.addRegion(region2);
         jugador1.setNacion(nacion1);
 
-        Jugador jugador2 = new Jugador(2);
+        Jugador jugador2 = new Jugador();
         jugador2.setNombre("Jugador 2");
         jugador2.setRol(Jugador.Roles.SATRAPA);
-        jugador2.setIdImperio(imperio1.getId());
+        jugador2.setImperio(imperio1);
         Nacion nacion2 = new Nacion("Nacion 2");
-        nacion2.setJugador(jugador2.getId());
-        Region region3 = new Region(3,"Region 3",null);
-        Region region4 = new Region(4,"Region 4",null);
+        nacion2.setJugador(jugador2);
+        Region region3 = new Region("Region 3",null);
+        Region region4 = new Region("Region 4",null);
         nacion2.addRegion(region3);
         nacion2.addRegion(region4);
         jugador2.setNacion(nacion2);
@@ -50,28 +51,28 @@ public class TestPartida {
 
         /* Otro imperio */
 
-        Imperio imperio2 = new Imperio(2,"Imperio Clásico");
+        Imperio imperio2 = new Imperio("Imperio Clásico");
 
-        Jugador jugador3 = new Jugador(3);
+        Jugador jugador3 = new Jugador();
         jugador3.setNombre("Jugador 3");
         jugador3.setRol(Jugador.Roles.EMPERADOR);
-        jugador3.setIdImperio(imperio2.getId());
+        jugador3.setImperio(imperio2);
         Nacion nacion3 = new Nacion("Nacion 3");
-        nacion3.setJugador(jugador3.getId());
-        Region region5 = new Region(5,"Region 5",null);
-        Region region6 = new Region(6,"Region 6",null);
+        nacion3.setJugador(jugador3);
+        Region region5 = new Region("Region 5",null);
+        Region region6 = new Region("Region 6",null);
         nacion3.addRegion(region5);
         nacion3.addRegion(region6);
         jugador3.setNacion(nacion3);
 
-        Jugador jugador4 = new Jugador(4);
+        Jugador jugador4 = new Jugador();
         jugador4.setNombre("Jugador 4");
         jugador4.setRol(Jugador.Roles.SATRAPA);
-        jugador4.setIdImperio(imperio2.getId());
+        jugador4.setImperio(imperio2);
         Nacion nacion4 = new Nacion("Nacion 4");
-        nacion4.setJugador(jugador4.getId());
-        Region region7 = new Region(7,"Region 7",null);
-        Region region8 = new Region(8,"Region 8",null);
+        nacion4.setJugador(jugador4);
+        Region region7 = new Region("Region 7",null);
+        Region region8 = new Region("Region 8",null);
         nacion4.addRegion(region7);
         nacion4.addRegion(region8);
         jugador4.setNacion(nacion4);
@@ -80,14 +81,14 @@ public class TestPartida {
         imperio2.addJugador(jugador4);
 
         /* Tribu */
-        Imperio tribu1 = new Imperio(3,"Tribu 1");
+        Imperio tribu1 = new Imperio("Tribu 1");
         tribu1.setEsTribu(true);
-        Jugador jugador5 = new Jugador(5);
+        Jugador jugador5 = new Jugador();
         jugador5.setNombre("Jugador 5");
         jugador5.setRol(Jugador.Roles.JEFE_DE_TRIBU);
-        jugador5.setIdImperio(tribu1.getId());
+        jugador5.setImperio(tribu1);
         Nacion nacion5 = new Nacion("Nacion 5");
-        nacion5.setJugador(jugador5.getId());
+        nacion5.setJugador(jugador5);
         jugador5.setNacion(nacion5);
         tribu1.addJugador(jugador5);
 
@@ -102,7 +103,7 @@ public class TestPartida {
             for(Jugador j: i.jugadores()) {
                 System.out.println("jugador nombre = " + j.getNombre());
                 System.out.println("jugador rol = " + j.getRol());
-                System.out.println("jugador id imperio = " + j.getIdImperio());
+                System.out.println("jugador id imperio = " + j.getImperio().getId());
                 Nacion n = j.getNacion();
                 System.out.println("jugador nación = " + n.nombre );
                 List<Region> regiones = n.regiones();
