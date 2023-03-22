@@ -1,6 +1,6 @@
 package com.makokienterprises.satrapia.clases.edificios;
 
-enum Recursos {
+public enum Recursos {
     COMIDA,
     MADERA,
     PIEDRA,

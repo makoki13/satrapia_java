@@ -24,9 +24,13 @@ public class TestPartida {
         Region region1 = new Region("Region 1",null);
         Punto punto1 = new Punto(1,1,1,null);
         Ciudad ciudad1R1 = new Ciudad("Gandia",region1,punto1,true);
+        Punto puntoGranja = new Punto(10,10,10,null);
+        ciudad1R1.addGranja(puntoGranja);
         region1.addCiudad(ciudad1R1);
         Punto punto2 = new Punto(2,2,2,null);
         Ciudad ciudad2R1 = new Ciudad("Beniopa",region1,punto2,false);
+        Punto puntoGranja2 = new Punto(20,20,20,null);
+        ciudad2R1.addGranja(puntoGranja2);
         region1.addCiudad(ciudad2R1);
         Region region2 = new Region("Region 2",null);
 

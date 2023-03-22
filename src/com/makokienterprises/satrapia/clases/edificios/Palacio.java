@@ -36,9 +36,8 @@ public class Palacio extends Edificio {
         this.hacienda = new Hacienda();
         this.censo = new Censo();
 
-        //TODO
         //activar censo y recaudacion
-
+        
         Method funcionRecaudaImpuestos = Palacio.class.getMethod("recaudaImpuestos");
         Tarea tarea1 = new Tarea(this,funcionRecaudaImpuestos,5);
         Dispatcher.addTarea(tarea1);

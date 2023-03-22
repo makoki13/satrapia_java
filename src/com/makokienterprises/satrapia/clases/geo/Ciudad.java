@@ -1,8 +1,8 @@
 package com.makokienterprises.satrapia.clases.geo;
 
-import com.makokienterprises.satrapia.clases.edificios.Almacen;
-import com.makokienterprises.satrapia.clases.edificios.Palacio;
+import com.makokienterprises.satrapia.clases.edificios.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ciudad {
@@ -27,7 +27,7 @@ public class Ciudad {
 
     //TODO public Mercado mercado;
 
-    //TODO public List<Granja> granjas;
+    public List<Granja> granjas = new ArrayList<>();
     //TODO public List<Aserradero> aserraderos;
     //TODO public List<Cantera> canteras;
     //TODO public List<MinaDeHierro> minasDeHierro;
@@ -44,9 +44,26 @@ public class Ciudad {
         //Creamos el palacio
         this.palacio = new Palacio(this);
         //System.out.println("id palacio de " + nombre + ": " + this.palacio.getId());
+
+        //Creamos el almacén
+        this.almacen = new Almacen( "Almacén de ciudad", null);
+        Silo comida = new Silo(Recursos.COMIDA,0,1000000,5,1, this.almacen);
+        Silo madera = new Silo(Recursos.MADERA,0,1000000,5,1,this.almacen);
+        Silo piedra = new Silo(Recursos.PIEDRA,0,1000000,5,1,this.almacen);
+        Silo hierro = new Silo(Recursos.HIERRO,0,1000000,5,1,this.almacen);
+
+        this.almacen.addSilo(comida);
+        this.almacen.addSilo(madera);
+        this.almacen.addSilo(piedra);
+        this.almacen.addSilo(hierro);
     }
 
     public String getNombre() {
         return this.nombre;
+    }
+
+    public void addGranja(Punto punto) throws NoSuchMethodException {
+        Granja granja = new Granja(this,punto);
+        this.granjas.add(granja);
     }
 }
