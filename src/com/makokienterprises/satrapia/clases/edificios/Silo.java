@@ -8,8 +8,12 @@ public class Silo {
     # envioAutomatico: Después de la cosecha see envía al almacén destino. No se espera a llenar el stock del silo
     # soloAlmacenar: No envía. Se lo queda
     */
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
 
-    private int id;
+    private long id;
 
     public Recursos recurso;
     private int stock;
@@ -22,6 +26,7 @@ public class Silo {
     private Almacen almacenDestino;
 
     public Silo(Recursos recurso, int stock, int limite, int factorTiempo, double factorRendimiento, Almacen almacen) {
+        this.id = ++ultimoID;
         this.recurso = recurso;
         this.stock = stock;
         this.limite = limite;

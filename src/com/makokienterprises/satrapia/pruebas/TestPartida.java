@@ -41,6 +41,9 @@ public class TestPartida {
         Nacion nacion2 = new Nacion("Nacion 2");
         nacion2.setJugador(jugador2);
         Region region3 = new Region("Region 3",null);
+        Punto punto3 = new Punto(3,3,3,null);
+        Ciudad ciudad1R3 = new Ciudad("Alicante",region3,punto2,true);
+
         Region region4 = new Region("Region 4",null);
         nacion2.addRegion(region3);
         nacion2.addRegion(region4);

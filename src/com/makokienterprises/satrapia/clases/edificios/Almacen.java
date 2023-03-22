@@ -6,15 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Almacen {
-    private int id;
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
+
+    private long id;
     private String nombre;
 
     private Edificio edificio;
 
     public List<Silo> silos = new ArrayList<>();
 
-    public Almacen(int id, String nombre, Edificio edificio) {
-        this.id = id;
+    public Almacen( String nombre, Edificio edificio) {
+        this.id = ++ultimoID;
         this.nombre = nombre;
         this.edificio = edificio;
     }
@@ -32,7 +37,7 @@ public class Almacen {
         return null;
     }
 
-    public int getId() {
+    public long getId() {
         return this.id;
     }
 

@@ -8,7 +8,6 @@ import java.util.*;
 
 class DispatcherRun extends TimerTask
 {
-    public static int i = 0;
     public void run()
     {
         try {

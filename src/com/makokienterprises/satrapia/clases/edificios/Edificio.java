@@ -4,7 +4,12 @@ import com.makokienterprises.satrapia.clases.geo.Ciudad;
 import com.makokienterprises.satrapia.clases.geo.Punto;
 
 public class Edificio {
-    private int id;
+    static {
+        ultimoID = 0;
+    }
+    private static long ultimoID;
+
+    private long id;
     public String nombre;
     private Ciudad ciudad;
 
@@ -15,12 +20,16 @@ public class Edificio {
 
     private Almacen almacen;
 
-    public Edificio(int id, Ciudad ciudad) {
-        this.id = id;
+    public Edificio( Ciudad ciudad) {
+        this.id = ++ultimoID;
         this.ciudad = ciudad;
     }
 
     public Ciudad getCiudad() {
         return ciudad;
+    }
+
+    public long getId() {
+        return id;
     }
 }

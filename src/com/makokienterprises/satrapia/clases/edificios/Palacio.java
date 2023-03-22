@@ -8,7 +8,7 @@ import com.makokienterprises.satrapia.clases.parametros.Parametros;
 import java.lang.reflect.Method;
 
 public class Palacio extends Edificio {
-    private int id;
+    //private long id;
 
     public Ciudad ciudad;
     public Almacen almacen; // Dos silos, ORO y POBLACION
@@ -17,14 +17,16 @@ public class Palacio extends Edificio {
     private Hacienda hacienda;
 
     public Palacio(Ciudad ciudad) throws NoSuchMethodException {
-        super(1,ciudad);
+        super(ciudad);
 
         System.out.println("Creando palacio...");
+        //this.id = getId();
         this.ciudad = ciudad;
+
 
         //Crear almacen
         //Silo de oro
-        this.almacen = new Almacen(1, "Almacén de palacio", this);
+        this.almacen = new Almacen( "Almacén de palacio", this);
         Silo tesoro = new Silo(Recursos.ORO,0,0,5,1, this.almacen);
         Silo poblacion = new Silo(Recursos.POBLACION,10,0,5,1,this.almacen);
 

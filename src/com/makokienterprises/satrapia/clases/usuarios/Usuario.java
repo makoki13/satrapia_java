@@ -1,7 +1,7 @@
 package com.makokienterprises.satrapia.clases.usuarios;
 
 public class Usuario {
-    private int id;
+    private Jugador jugador;
 
     public String nombre;
 
