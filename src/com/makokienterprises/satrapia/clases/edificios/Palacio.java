@@ -39,28 +39,32 @@ public class Palacio extends Edificio {
         //activar censo y recaudacion
         
         Method funcionRecaudaImpuestos = Palacio.class.getMethod("recaudaImpuestos");
-        Tarea tarea1 = new Tarea(this,funcionRecaudaImpuestos,5);
+        Tarea tarea1 = new Tarea(this,funcionRecaudaImpuestos,5, null,null);
         Dispatcher.addTarea(tarea1);
 
         Method funcionHazCenso = Palacio.class.getMethod("hazCenso");
-        Tarea tarea2 = new Tarea(this,funcionHazCenso,5);
+        Tarea tarea2 = new Tarea(this,funcionHazCenso,5, null,null);
         Dispatcher.addTarea(tarea2);
     }
 
-    public void recaudaImpuestos() {
+    public boolean recaudaImpuestos() {
         int poblacion = this.cantidadPoblacion();
         int oro = hacienda.extrae(poblacion, (double)Parametros.porcentajeImpuestos);
         Silo siloOro = almacen.getSilo(Recursos.ORO);
         siloOro.addStock(oro);
+
+        return true;
     }
 
-    public void hazCenso() {
+    public boolean hazCenso() {
         Silo siloPoblacion = almacen.getSilo(Recursos.POBLACION);
         int poblacion = siloPoblacion.getStock();
 
         int nuevosCiudadanos = censo.extrae(poblacion, Parametros.porcentajeNacimientos);
 
         siloPoblacion.addStock(nuevosCiudadanos);
+
+        return true;
     }
 
     public int cantidadOro() {

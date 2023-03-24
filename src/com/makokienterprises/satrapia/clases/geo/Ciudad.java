@@ -28,7 +28,7 @@ public class Ciudad {
     //TODO public Mercado mercado;
 
     public List<Granja> granjas = new ArrayList<>();
-    //TODO public List<Aserradero> aserraderos;
+    public List<Aserradero> aserraderos = new ArrayList<>();
     //TODO public List<Cantera> canteras;
     //TODO public List<MinaDeHierro> minasDeHierro;
     //TODO public List<MinaDeOro> minasDeOro;
@@ -46,7 +46,8 @@ public class Ciudad {
         //System.out.println("id palacio de " + nombre + ": " + this.palacio.getId());
 
         //Creamos el almacén
-        this.almacen = new Almacen( "Almacén de ciudad", null);
+        this.almacen = new AlmacenCiudad( "Almacén de ciudad", this);
+
         Silo comida = new Silo(Recursos.COMIDA,0,1000000,5,1, this.almacen);
         Silo madera = new Silo(Recursos.MADERA,0,1000000,5,1,this.almacen);
         Silo piedra = new Silo(Recursos.PIEDRA,0,1000000,5,1,this.almacen);
@@ -62,8 +63,16 @@ public class Ciudad {
         return this.nombre;
     }
 
-    public void addGranja(Punto punto) throws NoSuchMethodException {
+    public void addGranja(Punto punto, boolean activar) throws NoSuchMethodException {
         Granja granja = new Granja(this,punto);
         this.granjas.add(granja);
+        if (activar) {
+            granja.activa();
+        }
+    }
+
+    public void addAserradero(Punto punto, boolean activar) throws NoSuchMethodException {
+        Aserradero aserradero = new Aserradero(this,punto);
+        this.aserraderos.add(aserradero);
     }
 }

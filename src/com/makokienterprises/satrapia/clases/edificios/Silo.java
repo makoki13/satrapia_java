@@ -39,15 +39,22 @@ public class Silo {
         return this.stock;
     }
 
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
     public void addStock(int cantidad) {
         int cantidadAporte = (int)(cantidad * this.factorRendimiento);
         this.stock += cantidadAporte;
         if ((this.stock > this.limite) && (this.limite > 0) ) {
             this.stock = this.limite;
         }
-        String strCiudad = this.almacen.getCiudad().getNombre();
-        String leyenda = "Añadido " + cantidadAporte + " de " + this.recurso + " al tesoro. Hay " + this.stock +
-                " en almacen de " + this.almacen.getNombre() + " de la ciudad " + strCiudad;
-        System.out.println(leyenda);
+        //String strCiudad = this.almacen.getCiudad().getNombre();
+        //if (this.recurso== Recursos.COMIDA) {
+//            String leyenda = "Añadido " + cantidadAporte + " de " + this.recurso + " al tesoro. Hay " + this.stock +
+//                    " en almacen de " + this.almacen.getNombre() + " de la ciudad " + strCiudad;
+            //String leyenda = "Hay " + this.stock + " en almacen de " + this.almacen.getNombre() + " de la ciudad " + strCiudad;
+            //System.out.println(leyenda);
+        //}
     }
 }

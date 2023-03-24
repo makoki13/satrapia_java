@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="cambiar id por ++ultimoId (II)">
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Cosecha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Granja.java" afterDir="false" />
+    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="Añadir granjas">
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/AlmacenCiudad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Aserradero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Poda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Transporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestTransporte.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Granja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Granja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Recursos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" afterDir="false" />
     </list>
@@ -76,9 +82,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTransporte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.makokienterprises.satrapia.pruebas.TestTransporte" />
+      <module name="com.makokienterprises.satrapia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.makokienterprises.satrapia.pruebas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestPartida" />
+        <item itemvalue="Application.TestTransporte" />
         <item itemvalue="Application.TestDispatcher" />
       </list>
     </recent_temporary>
@@ -141,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679504622918</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Añadir granjas">
+      <created>1679507284264</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679507284264</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,6 +179,7 @@
     <MESSAGE value="add hazCenso task" />
     <MESSAGE value="cambiar id por ++ultimoId" />
     <MESSAGE value="cambiar id por ++ultimoId (II)" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambiar id por ++ultimoId (II)" />
+    <MESSAGE value="Añadir granjas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadir granjas" />
   </component>
 </project>
