@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="Añadir tarea de Poda">
+    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="abstract primero">
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Cantera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Extraccion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/FuenteDeRecursos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/FuenteDeRecursos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679905803566</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="abstract primero">
+      <created>1679909016530</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679909016530</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +194,7 @@
     <MESSAGE value="Añadir granjas" />
     <MESSAGE value="solucion problema con borrar tareas de Dispatcher + acción a realizar cuando tarea muere" />
     <MESSAGE value="Añadir tarea de Poda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadir tarea de Poda" />
+    <MESSAGE value="abstract primero" />
+    <option name="LAST_COMMIT_MESSAGE" value="abstract primero" />
   </component>
 </project>

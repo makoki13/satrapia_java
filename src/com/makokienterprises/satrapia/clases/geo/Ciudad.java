@@ -29,7 +29,7 @@ public class Ciudad {
 
     public List<Granja> granjas = new ArrayList<>();
     public List<Aserradero> aserraderos = new ArrayList<>();
-    //TODO public List<Cantera> canteras;
+    public List<Cantera> canteras;
     //TODO public List<MinaDeHierro> minasDeHierro;
     //TODO public List<MinaDeOro> minasDeOro;
 
@@ -76,6 +76,14 @@ public class Ciudad {
         this.aserraderos.add(aserradero);
         if (activar) {
             aserradero.activa();
+        }
+    }
+
+    public void addCantera(Punto punto, boolean activar) throws NoSuchMethodException {
+        Cantera cantera = new Cantera(this,punto);
+        this.canteras.add(cantera);
+        if (activar) {
+            cantera.activa();
         }
     }
 }
