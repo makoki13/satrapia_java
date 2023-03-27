@@ -74,5 +74,8 @@ public class Ciudad {
     public void addAserradero(Punto punto, boolean activar) throws NoSuchMethodException {
         Aserradero aserradero = new Aserradero(this,punto);
         this.aserraderos.add(aserradero);
+        if (activar) {
+            aserradero.activa();
+        }
     }
 }

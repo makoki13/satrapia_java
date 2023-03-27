@@ -3,7 +3,7 @@ package com.makokienterprises.satrapia.clases.edificios;
 import com.makokienterprises.satrapia.clases.geo.Ciudad;
 import com.makokienterprises.satrapia.clases.geo.Punto;
 
-public class Edificio {
+abstract public class Edificio {
     static {
         ultimoID = 0;
     }

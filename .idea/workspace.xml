@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="Añadir granjas">
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/AlmacenCiudad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Aserradero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Poda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Transporte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestTransporte.java" afterDir="false" />
+    <list default="true" id="9b90d329-e70d-4447-bc1b-e8c7b04903f9" name="Changes" comment="solucion problema con borrar tareas de Dispatcher + acción a realizar cuando tarea muere">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Dispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/dispatcher/Tarea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Granja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Granja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Palacio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Silo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Aserradero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Aserradero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Edificio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/edificios/Edificio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/clases/geo/Ciudad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/makokienterprises/satrapia/pruebas/TestPartida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679507284264</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="solucion problema con borrar tareas de Dispatcher + acción a realizar cuando tarea muere">
+      <created>1679661882029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679661882029</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +178,7 @@
     <MESSAGE value="cambiar id por ++ultimoId" />
     <MESSAGE value="cambiar id por ++ultimoId (II)" />
     <MESSAGE value="Añadir granjas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadir granjas" />
+    <MESSAGE value="solucion problema con borrar tareas de Dispatcher + acción a realizar cuando tarea muere" />
+    <option name="LAST_COMMIT_MESSAGE" value="solucion problema con borrar tareas de Dispatcher + acción a realizar cuando tarea muere" />
   </component>
 </project>

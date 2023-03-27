@@ -24,12 +24,6 @@ public class Aserradero extends Edificio{
         this.almacen = new Almacen( "Almacén de aserradero " + this.getId() +  " de " + ciudad.getNombre(), this);
         Silo madera = new Silo(Recursos.MADERA,0,1000000,5,1, this.almacen);
         this.almacen.addSilo(madera);
-
-        this.poda = new Poda();
-
-        Method funcionPoda = Aserradero.class.getMethod("poda");
-        Tarea tarea1 = new Tarea(this,funcionPoda,5, null, null);
-        Dispatcher.addTarea(tarea1);
     }
 
     public boolean poda() {
@@ -38,5 +32,13 @@ public class Aserradero extends Edificio{
         siloMadera.addStock(madera);
 
         return true;
+    }
+
+    public void activa()  throws NoSuchMethodException{
+        this.poda = new Poda();
+
+        Method funcionPoda = Aserradero.class.getMethod("poda");
+        Tarea tarea1 = new Tarea(this,funcionPoda,5, null, null);
+        Dispatcher.addTarea(tarea1);
     }
 }
