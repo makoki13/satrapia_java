@@ -1,5 +1,7 @@
 package com.makokienterprises.satrapia.clases.edificios;
 
+import com.makokienterprises.satrapia.clases.persistencia.Persistencia;
+
 public class Silo {
     /*
     # stock: Cantidad en el silo
@@ -41,20 +43,17 @@ public class Silo {
 
     public void setStock(int stock) {
         this.stock = stock;
+        Persistencia.siloSetStock(this.id,this.stock);
     }
 
     public void addStock(int cantidad) {
         int cantidadAporte = (int)(cantidad * this.factorRendimiento);
-        this.stock += cantidadAporte;
-        if ((this.stock > this.limite) && (this.limite > 0) ) {
-            this.stock = this.limite;
+        if ( ((this.stock + cantidadAporte) > this.limite) && (this.limite > 0) ) {
+            this.setStock(this.limite);
         }
-        //String strCiudad = this.almacen.getCiudad().getNombre();
-        //if (this.recurso== Recursos.COMIDA) {
-//            String leyenda = "Añadido " + cantidadAporte + " de " + this.recurso + " al tesoro. Hay " + this.stock +
-//                    " en almacen de " + this.almacen.getNombre() + " de la ciudad " + strCiudad;
-            //String leyenda = "Hay " + this.stock + " en almacen de " + this.almacen.getNombre() + " de la ciudad " + strCiudad;
-            //System.out.println(leyenda);
-        //}
+        else {
+            int cantidadStock = this.stock + cantidadAporte;
+            this.setStock(cantidadStock);
+        }
     }
 }
