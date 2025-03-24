@@ -2,6 +2,8 @@ package com.makoki.clases.construcciones;
 
 import java.util.ArrayList;
 
+//Almacen
+
 public class Almacen {
     private final ArrayList<Silo> silos;
     
