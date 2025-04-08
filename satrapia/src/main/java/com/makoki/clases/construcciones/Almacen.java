@@ -2,12 +2,14 @@ package com.makoki.clases.construcciones;
 
 import java.util.ArrayList;
 
-//Almacen
+import com.makoki.clases.investigacion.Recurso;
 
 public class Almacen {
+    Edificio edificio;
     private final ArrayList<Silo> silos;
     
-    public Almacen() {
+    public Almacen(Edificio edificio) {
+        this.edificio = edificio;
         silos = new ArrayList<>();
     }
     public void agregarSilo(Silo silo) {
@@ -18,5 +20,15 @@ public class Almacen {
     }
     public ArrayList<Silo> getSilos() {
         return silos;
+    }
+
+    public Silo getSiloPorRecurso(Recurso recurso) {
+        for (Silo silo : silos) {
+            if (silo.getRecurso().equals(recurso)) {
+                return silo;
+            }
+        }
+        
+        return null;
     }
 }
